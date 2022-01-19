@@ -1,3 +1,76 @@
 .hero{
-    height: 100vh;
+    text-align: center;
+    position: relative;
+    flex-direction: column;
+    &__overlay{
+
+        height: inherit;
+        width: inherit;
+
+        
+    }
+    &__image{
+        position: relative;
+        background-image: url("/assets/images/Carlos.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-attachment: scroll;
+        width: 100vw;
+        height: 100vh;
+        
+        @include breakpoint-down(medium){
+            height: 50vh;
+        }
+    }
+    &__image::after{
+        z-index: 0;
+        content: "";
+        opacity: 0.5;
+        position: absolute;
+        background-color: $softGray;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        @include breakpoint-down(medium){
+            display:none;
+        }
+    }
+    &__text{
+        z-index: 2;
+        padding: $p-lr-desktop;
+        max-width: 52.15rem;
+        margin: auto;
+        position: absolute;
+
+        // breakpoint medium
+        @include breakpoint-down(medium){
+            padding: $p-lr-mobil;
+            position: relative;
+        }
+        @include breakpoint-up(medium){
+            margin-left: 50%;
+            transform: translateX(-50%);
+            padding: $p-lr-desktop;
+
+        }
+
+        h1{
+            font-family: $font-headings;
+            font-size: $font-size-xl;
+            font-weight: $font-black;
+            @include breakpoint-down(medium){
+                margin-top: 1.75rem;
+                margin-bottom: 2.25rem;
+                font-size: $font-size-lg;
+            }
+        }
+        p{
+            margin-bottom: 2.25rem;
+        }
+    }
+
+
+
 }

@@ -1,0 +1,45 @@
+.about{
+    &__text{
+        z-index: 2;
+        padding: $p-lr-desktop;
+        max-width: 52.15rem;
+        margin: auto;
+        text-align: center;
+
+        // breakpoint medium
+        @include breakpoint-down(medium){
+            padding: $p-lr-mobil;
+        }
+        @include breakpoint-up(medium){
+            // Section on breakpoint up
+            text-align: left;
+            max-width: 30.75rem;    
+        }
+
+        h1{
+            font-family: $font-headings;
+            font-size: $font-size-xl;
+            font-weight: $font-black;
+            @include breakpoint-down(medium){
+                margin-top: 1.75rem;
+                margin-bottom: 2.25rem;
+                font-size: $font-size-lg;
+            }
+            @include breakpoint-up(medium){font-size: $font-size-lg-m;}
+        }
+        h6{
+            font-size: $font-size-md;
+            font-weight: $font-sbold;
+        }
+        p{
+            margin-bottom: 2.25rem;
+        }
+        a{
+            text-decoration: none;
+            color: $darkgray;
+            ion-icon{
+                margin-right: 0.5rem;
+            }
+        }
+    }
+}
