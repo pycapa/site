@@ -1,0 +1,49 @@
+/* 
+Author: Carlos A Perez
+Colors 
+*/
+
+$red: #e93f38;
+$softGray: #ebebeb;
+$darkgray: #707070;
+$black: #333333;
+$white:#fff;
+
+/*Fonts*/
+// Fonts
+/* Headings: Weights: 400 */
+$font-headings : 'Montserrat', sans-serif;
+/* Body: Weights: 400, 700 */
+$font-body : 'Josefin Sans', sans-serif;
+
+/* Fonts Sizes 
+
+Sm-fonts: 15px
+Md-fonts: 18px
+Lg-fonts: 45px
+Xl-fonts: 80px
+*/
+$font-size-sm : 15px;
+$font-size-md : 18px;
+$font-size-lg : 30px;
+$font-size-xl : 80px;
+
+/* weight*/
+
+$font-regular: 400;
+$font-light : 300;
+$font-sbold : 600;
+$font-bold: 700;
+$font-black: 900;
+
+
+
+// breakpoints variables
+$screen-sm-min: 768px;
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-md-min: 992px;
+$screen-sm-max: ($screen-md-min - 1);
+$screen-lg-min: 1200px;
+$screen-md-max: ($screen-lg-min - 1);
+$screen-xlg-min: 1400px;
+$screen-lg-max: ($screen-xlg-min - 1);

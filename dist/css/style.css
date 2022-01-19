@@ -1,0 +1,142 @@
+/* 
+Author: Carlos A Perez
+Colors 
+*/
+/*Fonts*/
+/* Headings: Weights: 400 */
+/* Body: Weights: 400, 700 */
+/* Fonts Sizes 
+
+Sm-fonts: 15px
+Md-fonts: 18px
+Lg-fonts: 45px
+Xl-fonts: 80px
+*/
+/* weight*/
+*, *::after *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:hover {
+  color: #333333 !important;
+}
+
+body {
+  font-size: 100%;
+  padding: 0;
+  font-family: "";
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.noscroll {
+  overflow: hidden;
+}
+
+/*
+- Mobile: 375px
+- Desktop: 1440px
+*/
+.navbar {
+  height: 5.5rem !important;
+  min-width: 25rem;
+  padding: 1.93rem 8.437rem;
+}
+@media (max-width: 991px) {
+  .navbar {
+    padding: 1.93rem 2.06rem;
+  }
+}
+.navbar-brand {
+  font-size: 1.87rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #333333;
+  text-decoration: none !important;
+}
+.navbar__hamburger-menu {
+  cursor: pointer;
+}
+.navbar__hamburger-menu > span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #707070;
+  transform-origin: 5px 1px;
+  transition: 0.3s ease-in-out;
+}
+.navbar__hamburger-menu > span:not(:last-child) {
+  margin-bottom: 4px !important;
+}
+.navbar__hamburger-menu.open > span {
+  margin-left: 3px;
+}
+.navbar__hamburger-menu.open > span:first-child {
+  transform: rotate(45deg);
+}
+.navbar__hamburger-menu.open > span:nth-child(2) {
+  opacity: 0;
+}
+.navbar__hamburger-menu.open > span:last-child {
+  transform: rotate(-45deg);
+}
+.navbar-collapse {
+  justify-content: right;
+}
+.navbar-nav .nav-link {
+  margin-left: 2.81rem;
+}
+.navbar-nav .nav-link:hover {
+  color: #e93f38 !important;
+}
+.navbar-nav .nav-link, .navbar-mobil .nav-link {
+  color: #707070 !important;
+}
+.navbar-mobil {
+  display: none;
+  text-align: center;
+  width: 100%;
+  margin-top: 0 !important;
+  font-size: 18px;
+  background-color: #e93f38 !important;
+  padding: 1.375rem 0 !important;
+}
+.navbar-mobil .nav-link {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  color: #fff !important;
+}
+.navbar-mobil .nav-link:not(:last-child) {
+  margin-bottom: 2.875rem;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.fade-in {
+  animation: fade-in 0.5s ease-in-out forwards;
+}
+
+.fade-out {
+  animation: fade-out 0.5s ease-in-out forwards;
+}
+
+.hero {
+  height: 100vh;
+}
+
+/*# sourceMappingURL=style.css.map */

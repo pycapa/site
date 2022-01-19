@@ -1,0 +1,21 @@
+// Breakpoints
+/*
+- Mobile: 375px
+- Desktop: 1440px
+*/
+$brakpoints-up:("small": $screen-sm-min, "medium": $screen-md-min, "large": $screen-lg-min, "x-large" : $screen-xlg-min);
+$brakpoints-down:("small" : $screen-xs-max, "medium": $screen-sm-max, "large": $screen-md-max);
+
+@mixin breakpoint-up($size) {
+    @media (min-width : map-get($brakpoints-up , $size)){
+        @content;
+    }
+
+}
+
+@mixin breakpoint-down($size) {
+    @media (max-width : map-get($brakpoints-down , $size)){
+        @content;
+    }
+
+}
