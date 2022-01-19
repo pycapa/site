@@ -41,7 +41,6 @@ body{
             margin-bottom: 2.25rem;
             font-size: $font-size-lg;
         }
-        @include breakpoint-up(medium){font-size: $font-size-lg;}
 }
 
 .separator{  // section separator
