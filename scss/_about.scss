@@ -1,7 +1,10 @@
 .about{
+    position: relative;
+    padding-top: $pt;
+    padding-bottom: $pt;
+    @include breakpoint-up(medium){flex-direction: row;}
     &__text{
         z-index: 2;
-        padding: $p-lr-desktop;
         max-width: 52.15rem;
         margin: auto;
         text-align: center;
@@ -12,8 +15,9 @@
         }
         @include breakpoint-up(medium){
             // Section on breakpoint up
-            text-align: left;
-            max-width: 30.75rem;    
+            text-align: left!important;
+            max-width: 30.75rem;   
+            margin-left: 34.06rem; 
         }
 
         h1{
@@ -26,6 +30,9 @@
                 font-size: $font-size-lg;
             }
             @include breakpoint-up(medium){font-size: $font-size-lg-m;}
+        }
+        h1:last-child{
+            margin-top: 1rem;
         }
         h6{
             font-size: $font-size-md;
@@ -40,6 +47,24 @@
             ion-icon{
                 margin-right: 0.5rem;
             }
+            @include breakpoint-down(medium){ justify-content: center;}
         }
+
     }
+
+    &__image{
+        width: 24.68rem;
+        height: 24.68rem;
+        left:5.75rem;
+        position:absolute;
+        @include breakpoint-down(medium){display: none;}
+    }
+    
+
+}
+.download-btn{
+    margin-top: 2rem;
+    display: block;
+    justify-content: left;
+    a{color:$white!important;}
 }

@@ -1,0 +1,29 @@
+.social-media{
+    position: fixed;
+    right: -8rem;
+    top:50%;
+    transform: rotate(90deg);
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    z-index: 100;
+    
+    p{margin: 0;}
+
+    .separator{
+        display: block!important;
+        border-color: $red;
+        margin: 0 1.40rem;
+        width: 5.75rem;
+
+    }
+    .logo {margin-left: 1rem;
+        cursor:pointer;
+        transition: all 500ms ease-in-out;}
+   
+    .logo:hover{
+        color: $red!important;
+        transform: rotate(-90deg);
+    }
+    
+}
