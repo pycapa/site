@@ -67,10 +67,10 @@
     </section>
 
 
-    <section id="about" class="about d-flex justify-content-center flex-column align-items-center">
+    <section id="about" class="about section d-flex justify-content-center flex-column align-items-center">
         <div class="separator"></div>
-        <img class="about__image" src="/assets/images/Carlos_2.png" alt="bycap">
-        <div class="about__text">
+        <img class="about__image col-md-4" src="/assets/images/Carlos_2.png" alt="bycap">
+        <div class="about__text col-md-8">
             <h1 class="section-title">ABOUT ME</h1>
             <H6>Welcome to my profile</H6>
             <p>Hello! my name is Carlos Alberto I’m from Venezuela. I’m Web Designer. When developing I focus on understand
@@ -88,7 +88,7 @@
 
     </section>
 
-    <section id="project" class="project d-flex justify-content-center flex-column align-items-center">
+    <section id="project" class="project section d-flex justify-content-center flex-column align-items-center">
         <div class="separator"></div>
         <div class="project__text">
             <h1 class="section-title">LAST PROJECTS</h1>
@@ -96,10 +96,11 @@
         </div>
 
     </section>
-    <section id="contact" class="contact d-flex justify-content-center flex-column">
+    <section id="contact" class="contact section d-flex justify-content-center flex-column align-items-center">
         <div class="separator"></div>
-        <h1 class="section-title text-center">CONTACT ME</h1>
-        <div class="contact__text d-flex flex-row">
+        
+        <div class="contact__text col-md-8">
+            <h1 class="section-title text-center">CONTACT ME</h1>
             <form action="" method="get" class="contact__form d-flex flex-column col-md-8">
                 <div class="contact__form-input">
                     <label class="form-label" for="name">Enter your name: </label>
@@ -117,6 +118,7 @@
                     <a class="custom-btn" type="submit" role="button">Submit</a>
                 </div>
             </form>
+        </div>
             <div class="contact__text__control d-flex flex-column col-md-4">
                 <div class="contact__medios d-flex flex-column mt-3 ">
                     <p>
@@ -131,7 +133,7 @@
                 </div>
 
             </div>
-        </div>
+
 
 
     </section>
@@ -155,6 +157,49 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <script src="/dist/js/main.js"></script>
+    <script type="module">
+
+        // Import the functions you need from the SDKs you need
+      
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.4/firebase-app.js";
+      
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.4/firebase-analytics.js";
+      
+        // TODO: Add SDKs for Firebase products that you want to use
+      
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+      
+        // Your web app's Firebase configuration
+      
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      
+        const firebaseConfig = {
+      
+          apiKey: "AIzaSyBEWyv3i8uHNm0vHjr9mEnzo2-n0bal6ss",
+      
+          authDomain: "carlos-site-3d3f1.firebaseapp.com",
+      
+          projectId: "carlos-site-3d3f1",
+      
+          storageBucket: "carlos-site-3d3f1.appspot.com",
+      
+          messagingSenderId: "668226818868",
+      
+          appId: "1:668226818868:web:3fca605175f5103b404b61",
+      
+          measurementId: "G-4BCJWWJGDJ"
+      
+        };
+      
+      
+        // Initialize Firebase
+      
+        const app = initializeApp(firebaseConfig);
+      
+        const analytics = getAnalytics(app);
+      
+      </script>
 </body>
 
 </html>

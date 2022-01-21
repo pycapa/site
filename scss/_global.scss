@@ -66,3 +66,12 @@ body{
     }
 
 }
+
+.section{
+    @include breakpoint-up(medium){
+        padding: 0 8.437rem;}
+}
+
+.section:nth-child(even){
+    background-color: $softgray
+}

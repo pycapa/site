@@ -2,14 +2,14 @@
     position: relative;
     padding-top: $pt;
     padding-bottom: $pt;
-    @include breakpoint-up(medium){flex-direction: row;}
+    @include breakpoint-up(medium){
+        flex-direction: row!important;}
 
     @include breakpoint-down(medium){
         padding: $p-lr-mobil!important;
     }
     &__text{
         z-index: 2;
-        max-width: 52.15rem;
         margin: auto;
         text-align: center;
 
@@ -20,8 +20,10 @@
         @include breakpoint-up(medium){
             // Section on breakpoint up
             text-align: left!important;
-            max-width: 30.75rem;   
-            margin-left: 34.06rem; 
+            max-width: 50rem;
+            padding: $p-lr-desktop;
+            margin-left: 1rem;
+            
         }
 
         h1{
@@ -57,12 +59,13 @@
     }
 
     &__image{
-        width: 24.68rem;
+ /*       width: 24.68rem;
         height: 24.68rem;
         left:5.75rem;
-        position:absolute;
+        position:absolute;*/
         transform: rotateY(180deg);
-        @include breakpoint-down(medium){display: none;}
+        background-color: $softgray;
+        @include breakpoint-down(large){display: none;}
     }
     
 
