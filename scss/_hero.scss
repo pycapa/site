@@ -43,7 +43,6 @@
         max-width: 52.15rem;
         margin: auto;
         position: absolute;
-
         // breakpoint medium
         @include breakpoint-down(medium){
             padding: $p-lr-mobil;
@@ -53,6 +52,9 @@
             margin-left: 50%;
             transform: translateX(-50%);
             padding: $p-lr-desktop;
+            a{
+                margin: auto;
+            }
 
         }
 
@@ -68,6 +70,14 @@
         }
         p{
             margin-bottom: 2.25rem;
+        }
+        a{
+            text-decoration: none;
+
+            ion-icon{
+                margin-right: 0.5rem;
+            }
+            @include breakpoint-down(medium){ justify-content: center;}
         }
     }
 

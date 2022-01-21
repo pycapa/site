@@ -1,4 +1,7 @@
 .social-media{
+    @include breakpoint-down(medium){
+        display: none;
+    }
     position: fixed;
     right: -8rem;
     top:50%;

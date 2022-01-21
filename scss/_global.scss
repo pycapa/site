@@ -3,7 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 
 *:hover{
     color:$black!important;
@@ -20,12 +22,20 @@ body{
 }
 
 .custom-btn{
+    display: flex;
+    text-align: center;
     background-color: $red;
     color: $white;
     padding: 1.125rem 4.56rem,;
-    border-radius: 10px;
+    max-height: 3.43rem;
     cursor: pointer;
     text-decoration: none;
+    transition: all 0.3s ease-in-out;
+
+    @include breakpoint-up(medium){
+        display: block;
+        max-width: 20rem;
+    }
     &:hover{ 
         opacity: 0.7;
         color: $white!important;}
@@ -45,9 +55,10 @@ body{
 
 .separator{  // section separator
     width: 10rem;
+
     border-bottom: 1px solid $darkgray;
     margin: auto;
-    margin-top: 7.75rem;
+    margin-top: 2.75rem;
     @include breakpoint-up(medium){
         // Section on breakpoint up
         display: none;

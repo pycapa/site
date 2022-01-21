@@ -26,28 +26,28 @@
             <span class="navbar-toggler-icon"></span>
           </button> -->
             <a id="mnuBtn" class='navbar__hamburger-menu navbar-toggler'>
-            
+
                 <span></span>
                 <span></span>
                 <span></span>
-            
+
             </a>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link active" href="#">Home</a>
+                    <a class="nav-link" href="#about">About</a>
                     <a class="nav-link" href="#">Projects</a>
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                 </div>
             </div>
         </div>
 
         <!-- mobil menu -->
         <div class="navbar-mobil">
-            <a class="nav-link active " aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link active " href="#">Home</a>
+            <a class="nav-link" href="#about">About</a>
             <a class="nav-link" href="#">Projects</a>
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
         </div>
     </nav>
 
@@ -59,27 +59,80 @@
                 <h1 class="section-title">Carlos Alberto</h1>
                 <p>I’m a web designer and front-end developer with a passion for learning.
                     I would like to help you by developing websites. I build websites to make you successful.</p>
-                <a id="hero-submit-btn" class="custom-btn" href="#">Get In Touch</a>
+                <div class="hero-submit-btn">
+                    <a id="hero-submit-btn" class="custom-btn" href="#contact">Get In Touch</a>
+                </div>
             </div>
         </div>
     </section>
 
 
-    <section class="about d-flex justify-content-center flex-column align-items-center">
+    <section id="about" class="about d-flex justify-content-center flex-column align-items-center">
         <div class="separator"></div>
         <img class="about__image" src="/assets/images/Carlos_2.png" alt="bycap">
         <div class="about__text">
             <h1 class="section-title">ABOUT ME</h1>
             <H6>Welcome to my profile</H6>
-            <p>Hi my name is Carlos Alberto I’m from Venezuela. I’m Web Designer. When developing I focus on understand your goals and create a final product that you love and more important ready for work.</p>
+            <p>Hello! my name is Carlos Alberto I’m from Venezuela. I’m Web Designer. When developing I focus on understand
+                your goals and create a final product that you love and more important ready for work.</p>
             <H6>What are my values?</H6>
             <p>Developing tools that satisfy you.</p>
-            <a class="d-flex align-items-center text-center" href="mailto:carlosperez@bycap.us" ><ion-icon name="mail"></ion-icon>carlosperez@bycap.us</a>
-            <div class="download-btn">
+            <a class="d-flex align-items-center text-center" href="mailto:carlosperez@bycap.us">
+                <ion-icon name="mail"></ion-icon>carlosperez@bycap.us
+            </a>
+            <div class="download-btn m-auto mt-3 mb-3 pt-3">
                 <a id="download-btn" class="custom-btn" href="#">Download my CV</a>
             </div>
-            <h1 class="section-title">Less is more ...</h1>
+            <h1 class="section-title mt-5">Less is more ...</h1>
         </div>
+
+    </section>
+
+    <section id="project" class="project d-flex justify-content-center flex-column align-items-center">
+        <div class="separator"></div>
+        <div class="project__text">
+            <h1 class="section-title">LAST PROJECTS</h1>
+            <H6>I'm working in this section..</H6>
+        </div>
+
+    </section>
+    <section id="contact" class="contact d-flex justify-content-center flex-column">
+        <div class="separator"></div>
+        <h1 class="section-title text-center">CONTACT ME</h1>
+        <div class="contact__text d-flex flex-row">
+            <form action="" method="get" class="contact__form d-flex flex-column col-md-8">
+                <div class="contact__form-input">
+                    <label class="form-label" for="name">Enter your name: </label>
+                    <input class="form-control" type="text" name="name" id="name" required>
+                </div>
+                <div class="contact__form-input">
+                    <label class="form-label" for="email">Enter your email: </label>
+                    <input class="form-control" type="email" name="email" id="email" required>
+                </div>
+                <div class="contact__form-input">
+                    <label class="form-label" for="description">Description: </label>
+                    <textarea class="form-control" type="" name="description" id="email" required></textarea>
+                </div>
+                <div class="contact__form-input mt-3 mb-3 pt-3">
+                    <a class="custom-btn" type="submit" role="button">Submit</a>
+                </div>
+            </form>
+            <div class="contact__text__control d-flex flex-column col-md-4">
+                <div class="contact__medios d-flex flex-column mt-3 ">
+                    <p>
+                        <ion-icon name='map'></ion-icon>Miami, Florida, USA.
+                    </p>
+                    <p>
+                        <ion-icon name='phone-portrait'></ion-icon>+1 (786) 8724340
+                    </p>
+                    <a class='d-flex align-items-center text-center' href="mailto:carlosperez@bycap.us">
+                        <ion-icon name='mail'></ion-icon>carlosperez@bycap.us
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
 
     </section>
     <!-- Scripts -->
