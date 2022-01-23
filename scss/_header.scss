@@ -2,8 +2,11 @@
     height: 5.5rem!important;
     min-width: 25rem;
     padding: 1.93rem 8.437rem;
+    transition: 0.3s ease-in-out all!important;
+
     
     @include breakpoint-down(medium){ padding: 1.93rem 2.06rem;}
+    @include breakpoint-down(small){background-color: $white;}
 
     &-brand{
         font-size: 1.87rem;
@@ -39,6 +42,8 @@
     &-nav{ 
         .nav-link{ margin-left: 2.81rem; }
         .nav-link:hover{color: $red!important;}
+        .nav-link.active{color: $red!important;}
+
     }
     &-nav,
     &-mobil{ .nav-link{ color: $darkgray!important; } }
@@ -61,4 +66,14 @@
     }
 }
 
+.navbar-effect{
 
+    background-color: $white!important;
+}
+
+footer{
+    background-color: $softgray;
+    color: $black;
+    text-align: center;
+    h6{font-size: $font-size-sm;}
+}
